@@ -10,6 +10,8 @@
         
         <link rel="stylesheet" href="css/bootstrap4-executive-suite.min.css">
         
+        <link rel="stylesheet" href="css/style.css">
+
         <link href="https://fonts.googleapis.com/css?family=Merriweather|Oswald|Source+Sans+Pro" rel="stylesheet">
         
 </head>
@@ -37,27 +39,74 @@
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-         
-      <div class="card text-center">
+
+
+      <div class="card">
         <div class="card-header">
-          <ul class="nav nav-tabs card-header-tabs">
+          <ul class="nav nav-tabs card-header-tabs" id="nav-list" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" href="#!">Active</a>
+              <a class="nav-link active" href="#photoshop" role="tab" aria-controls="photoshop" aria-selected="true">Photoshop</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#!">Link</a>
+              <a class="nav-link"  href="#video" role="tab" aria-controls="video" aria-selected="false">Video</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#!">Disabled</a>
+              <a class="nav-link" href="#blender" role="tab" aria-controls="blender" aria-selected="false">Blender</a>
             </li>
           </ul>
         </div>
         <div class="card-body">
-          <h4 class="card-title">Special title treatment</h4>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <h4 class="card-title">Showcase</h4>
+         
+          
+           <div class="tab-content mt-3">
+            <div class="tab-pane active" id="photoshop" role="tabpanel">
+              <h4 class="card-subtitle">Adobe Photoshop</h4>
+              <p class="card-text"> Here is the artwork done by Photoshop.</p>
+              <div class="card-columns">
+                <div class="card">
+                  <div class="card-body">
+                    <img src="images/Alpha.jpg" class="img-fluid" alt="alpha-wolf">
+                  </div>
+                </div>
+                <div class="card p-3">
+                  <img src="images/Alpha.jpg" class="img-fluid" alt="alpha-wolf">
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <img src="images/Alpha.jpg" class="img-fluid" alt="alpha-wolf">
+                  </div>
+                </div>
+                <div class="card bg-primary p-3 text-center">
+                  <img src="images/Alpha.jpg" class="img-fluid" alt="alpha-wolf">
+                </div>
+              </div>
+              
+            </div>
+             
+            <div class="tab-pane" id="video" role="tabpanel" aria-labelledby="video-tab">  
+              <h4 class="card-subtitle">Adobe Premiere Pro & After Effect</h4>
+            <p class="card-text">Here is the final video done by Premiere Pro & After Effect.</p>
+            <a href="#" class="btn btn-primary">View</a>
+            </div>
+             
+            <div class="tab-pane" id="deals" role="tabpanel" aria-labelledby="blender-tab">
+              <p class="card-subtext">Blender</p>
+              <p class="card-text">Here is the 3D modelling done by Blender.</p>
+              <a href="#" class="btn btn-primary">View</a>
+            </div>
+          </div>
         </div>
-      </div>      
+      </div>
+      <script>
+          $('#nav-list a').on('click', function (e) {
+            e.preventDefault()
+            $(this).tab('show')
+          })  
+          
+              
+      </script>
+            
 </body>
 
 </html>
