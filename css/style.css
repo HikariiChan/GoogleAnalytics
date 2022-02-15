@@ -19,3 +19,8 @@
     justify-content:center
 }
 
+blockquote{
+    justify-content: center;
+    display:grid;
+
+}
