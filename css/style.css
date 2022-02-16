@@ -27,3 +27,10 @@ blockquote{
 .card-body-bg-primary mb-3 d-inline-block{
     justify-content: center;
 }
+
+img{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
