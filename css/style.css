@@ -25,5 +25,5 @@ blockquote{
 
 }
 .card-body-bg-primary mb-3 d-inline-block{
-    align-content: center;
+    justify-content: center;
 }
