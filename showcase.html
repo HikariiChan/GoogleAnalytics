@@ -62,17 +62,19 @@
       <div class="card">
         <div class="card-header">
           <ul class="nav nav-tabs card-header-tabs" id="nav-list" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" href="#photoshop" role="tab" aria-controls="photoshop" aria-selected="true">Photoshop</a>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" href="#photoshop" role="tab" aria-controls="photoshop" data-toggle="tab">Photoshop</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link"  href="#video" role="tab" aria-controls="video" aria-selected="false">Video</a>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" href="#video" role="tab" aria-controls="video" data-toggle="tab">Video</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#blender" role="tab" aria-controls="blender" aria-selected="false">Blender</a>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" href="#blender" role="tab" aria-controls="blender" data-toggle="tab">Blender</a>
             </li>
           </ul>
         </div>
+
+        <!-- tab-pane -->
         <div class="card-body">
           <h4 class="card-title">Showcase</h4>
          
@@ -102,7 +104,7 @@
               
             </div>
              
-            <div class="tab-pane" id="video" role="tabpanel" aria-labelledby="video-tab">  
+            <div class="tab-pane" id="video" role="tabpanel" >  
               <h4 class="card-subtitle">Adobe Premiere Pro & After Effect</h4>
             <p class="card-text">Here is the final video done by Premiere Pro & After Effect.</p>
             <div class="embed-responsive embed-responsive-16by9">
@@ -113,24 +115,19 @@
             </div>
             </div>
              
-            <div class="tab-pane" id="blender" role="tabpanel" aria-labelledby="blender-tab">
+            <div class="tab-pane" id="blender" role="tabpanel" >
               <p class="card-subtext">Blender</p>
               <p class="card-text">Here is the 3D modelling done by Blender.</p>
               <a href="#" class="btn btn-primary">View</a>
             </div>
           </div>
         </div> 
-        </div>
+        
       </div>
-      <script>
-          $('#nav-list a').on('click', function (e) {
-            e.preventDefault()
-            $(this).tab('show')
-          })  
-          
-              
-      </script>
-            
+      <script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+
+      <script type="text/javascript" src="js/custom.js"></script>
+      <script src="js/bootstrap.min.js"></script>   
 </body>
 
 </html>
