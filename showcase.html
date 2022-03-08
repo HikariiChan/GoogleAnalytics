@@ -68,6 +68,9 @@
             <li class="nav-item" role="presentation">
               <a class="nav-link" href="#blender" role="tab" aria-controls="blender" data-toggle="tab">Blender</a>
             </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" href="#programming" role="tab" aria-controls="programming" data-toggle="tab">Coding</a>
+            </li>
           </ul>
         </div>
 
@@ -80,23 +83,28 @@
             <div class="tab-pane active" id="photoshop" role="tabpanel">
               <h4 class="card-subtitle">Adobe Photoshop</h4>
               <p class="card-text"> Here is the artwork done by Photoshop.</p>
-              <div class="card-deck">
+              <div class="card-column">
                 <div class="card">
                   <div class="card-body-bg-primary mb-3 d-inline-block">
                     <img src="images/Alpha.jpg" class="img-fluid" alt="alpha-wolf">
                   </div>
                 </div>
-                <div class="card-body-bg-primary mb-3 d-inline-block">
-                  <img src="images/Bitmap3.jpg" class="img-fluid" alt="whale">
-                </div>
+                <div class="card">
+                  <div class="card-body-bg-primary mb-3 d-inline-block">
+                    <img src="images/Bitmap3.jpg" class="img-fluid" alt="whale">
+                  </div>
+                </div>  
                 <div class="card">
                   <div class="card-body-bg-primary mb-3 d-inline-block">
                     <img src="images/Violet.jpg" class="img-fluid" alt="Violet-Evergarden">
                   </div>
                 </div>
-                <div class="card-body-bg-primary mb-3 d-inline-block">
-                  <img src="images/North light.jpg" class="img-fluid" alt="noth-light">
+                <div class="card">
+                  <div class="card-body-bg-primary mb-3 d-inline-block">
+                    <img src="images/North light.jpg" class="img-fluid" alt="noth-light">
+                  </div>
                 </div>
+
               </div>
               
             </div>
@@ -107,13 +115,14 @@
             <div class="embed-responsive embed-responsive-16by9">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/7t7fuxlJCtA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
+
             <div class="embed-responsive embed-responsive-16by9">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/PmQ3WdW4gB8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             </div>
              
             <div class="tab-pane" id="blender" role="tabpanel" >
-              <p class="card-subtext">Blender</p>
+              <h4 class="card-subtitle">Blender</h4>
               <p class="card-text">Here is the 3D modelling done by Blender.</p>
               <div class="card-deck">
                 <div class="card">
@@ -131,6 +140,23 @@
                 </div>
                 <div class="card-body-bg-primary mb-3 d-inline-block">
                   <img src="images/shiba.jpeg" class="img-fluid" alt="noth-light">
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane" id="programming" role="tabpanel" >
+              <h4 class="card-subtitle">Coding</h4>
+              <p class="card-text">Here are some of simple programming languages.</p>
+              <div class="card-deck">
+                <div class="card">
+                  <img class="card-img-top" id="hidden-img" src="images/ePortfolio.png" alt="ePortfolio">
+                  <div class="card-body">
+                    <h4 class="card-title">E-portfolio</h4>
+                    <p class="card-text">The first HTML website I developed in college. Used HTML, CSS, JavaScript and JQuery for
+                      some simple function. It was hard but it is fun to learn !! 
+                    </p>
+                    <button class="btn btn-primary" type="button" onclick="show()" id="btnID">Show Image</button>
+                  </div>
                 </div>
               </div>
             </div>

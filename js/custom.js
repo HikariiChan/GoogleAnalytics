@@ -96,3 +96,14 @@ function validateForm() {
   
 }
 
+
+function show() {
+ 
+  /* Access image by id and change
+  the display property to block*/
+  document.getElementById('hidden-img')
+          .style.display = "block";
+
+  document.getElementById('btnID')
+          .style.display = "none";
+}

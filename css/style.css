@@ -3,20 +3,27 @@
 	margin-left: auto;
 	margin-right: auto;
 	display: flex;
-    width:50%; 
+    width:70%; 
     height: 50%;
     justify-content:center
 }
 
 .card-top-img{
-    max-height: 200px;
+    max-width: auto;
+    object-fit: cover;
 }
-
-.card-columns{
+.card-img-container{
+    width: auto;
+    height:300px;
+    align-content: center;
+    display: flex;
+}
+.img-fluid{
     margin-left: auto;
 	margin-right: auto;
 	display: flex;
-    justify-content:center
+    justify-content:center;
+    padding: 1rem;
 }
 
 blockquote{
@@ -28,7 +35,7 @@ blockquote{
     justify-content: center;
 }
 
-img{
+.about-container.img{
     width: 70%;
     display: flex;
     justify-content: center;
@@ -101,3 +108,12 @@ img{
     from {opacity: 0;}
     to {opacity:1 ;}
   }
+
+#recommend{
+    padding: 4rem 12rem;
+    margin-top: 2rem;
+}
+
+#hidden-img{
+    display: none;
+}
