@@ -1,0 +1,118 @@
+.card-group{
+    margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+    width:70%; 
+    height: 50%;
+    justify-content:center
+}
+
+.card-top-img{
+    max-width: auto;
+    object-fit: cover;
+}
+.card-img-container{
+    width: auto;
+    height:300px;
+    align-content: center;
+    display: flex;
+}
+.img-fluid{
+    margin-left: auto;
+	margin-right: auto;
+	display: flex;
+    justify-content:center;
+    padding: 1rem;
+}
+
+blockquote{
+    justify-content: center;
+    display:grid;
+
+}
+.card-body-bg-primary mb-3 d-inline-block{
+    justify-content: center;
+}
+
+.img-thumbnail{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.about-container{
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+
+}
+#text-center{
+    font-family: 'Architects Daughter', cursive;
+    font-size: 16px;
+}
+
+
+/* Popup container */
+#btn {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  /* The actual popup (appears on top) */
+#btn #status {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+  
+  /* Popup arrow */
+  #btn #status::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+    max-width: fit-content;
+    max-height: fit-content;
+  }
+  
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  #btn .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+#recommend{
+    padding: 4rem 12rem;
+    margin-top: 2rem;
+}
+
+#hidden-img{
+    display: none;
+}
