@@ -110,7 +110,7 @@ function show() {
 
 
 
-let slideIndex = 0;
+let slideIndex = 1;
 showSlides(slideIndex);
 
 showSlides();
